@@ -1,27 +1,16 @@
-# WorkshopAngular
+### Configurações iniciais:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+- apagar tudo que tiver no app.component.html e deixar só o router outlet pra usar as rotas
 
-## Development server
+### Estruturando o projeto:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- criar o componente shared que vai ter os componentes que serão compartilhados com outros componentes
+- ao criar um novo componente, ex.: users, vamos também criar uma pasta shared, mas pra poder guardar a service que vai ser compartilhada com o componente users
 
-## Code scaffolding
+### Utilizando rotas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- configuraremos a utilização de lazy load no projeto no app.routes.ts (não carregar todas as rotas de uma vez)
 
-## Build
+### Instalar o NX para o projeto poder ficar mais cacheável (deixar o projeto mais escalável e robusto)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- digitar no terminal: npx nx@latest init e dar enter no build e test, depois botar em skip for now se não quiser remoto
