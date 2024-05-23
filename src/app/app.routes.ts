@@ -12,16 +12,12 @@ export const routes: Routes = [
     // component: HomeComponent,
     // loadComponent implementa o lazy load da página
     loadComponent: () =>
-      import('./home/home.component').then(
-        (componente) => componente.HomeComponent
-      ),
+      import('home').then((componente) => componente.HomeComponent),
   },
   {
     path: 'users',
     // loadComponent implementa o lazy load da página
     loadComponent: () =>
-      import('./users/users.component').then(
-        (componente) => componente.UsersComponent
-      ),
+      import('users').then((componente) => componente.UsersComponent),
   },
 ];

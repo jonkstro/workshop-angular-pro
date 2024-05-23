@@ -14,3 +14,7 @@
 ### Instalar o NX para o projeto poder ficar mais cacheável (deixar o projeto mais escalável e robusto)
 
 - digitar no terminal: npx nx@latest init e dar enter no build e test, depois botar em skip for now se não quiser remoto
+- instalar a extensão nx
+- criar os módulos pela extensão digitando lib ao apertar em generate e digitando o nome e modules/nome
+- o nx já alterou o arquivo tsconfig.base.json para poder alterarmos lá no app.routes.ts adicionando só o nome do path quando for fazer o import. ex.: users
+- adicionar no tsconfig.base.json: "baseUrl":"./" para poder parar de dar erro no tsconfig.json
