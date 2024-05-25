@@ -1,1 +1,10 @@
-<p>users works!</p>
+<router-outlet />
+<ul>
+  <!-- o | async quer dizer que ele vai fazer o subscribe no html ao invés de fazer no componente. -->
+  <!-- o track quer dizer que o id vai ser único e não vai precisar ficar se renderizando novamente -->
+  @for (user of users$ | async; track user.id) {
+  <li>
+    <a [routerLink]="[user.id]">{{ user.name }}</a>
+  </li>
+  }
+</ul>

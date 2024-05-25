@@ -1,0 +1,9 @@
+<!-- novamente vamos fazer os subscribes dentro do html, por isso o | async -->
+<div *ngIf="user$ | async as user">
+  <!-- só serão exibidas as informações abaixo se user não for nulo -->
+  <h2>{{ user.name }}</h2>
+  <img [src]="user.avatar" [alt]="user.name" />
+  <p>Email: {{ user.email }}</p>
+  <p>Biography: {{ user.biography }}</p>
+  <p>ID: {{ user.id }}</p>
+</div>

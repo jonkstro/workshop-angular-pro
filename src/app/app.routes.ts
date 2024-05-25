@@ -19,5 +19,13 @@ export const routes: Routes = [
     // loadComponent implementa o lazy load da página
     loadComponent: () =>
       import('users').then((componente) => componente.UsersComponent),
+    children: [
+      {
+        // o :id é por que vai ser variavel
+        path: ':id',
+        loadComponent: () =>
+          import('users').then((componente) => componente.UserDetailComponent),
+      },
+    ],
   },
 ];
