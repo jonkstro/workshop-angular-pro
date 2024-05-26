@@ -2,11 +2,12 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserService } from './shared/users.service';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from 'home';
 
 @Component({
   selector: 'lib-users',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, HomeComponent],
   templateUrl: './users.component.html',
   styleUrl: './users.component.scss',
 })

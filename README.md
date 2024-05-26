@@ -56,3 +56,7 @@ https://stormy-astronaut-b2d.notion.site/Testes-no-Angular-a5ebc808578d4354814f7
 - após isso, vamos ter que adicionar o export dele em users/index.ts para que outros componentes possam enxergar ele
 - após isso, vamos adicionar as rotas no app/app.routes.ts dentro da rota de users, através do children
 - vamos criar uma função dentro de utils get-params-id.ts só para poder retornar os parametros sem ficar adicionando vários subscribes dentro do código
+
+### Escrevendo os testes
+
+- vamos criar um mock em users.mocks para mockar os usuarios nos testes
